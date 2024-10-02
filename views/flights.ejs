@@ -14,11 +14,11 @@
         
         <% flights.forEach((flight) => { %>
             <div class="flight">                
-                <h2><%= flight.from %></h2>
-                <h2><%= flight.to %></h2>
-                <p><%= flight.date %></p>
-                <p><%= flight.price %>€</p>
-                <h5><%= flight.company %></h5>
+                <h2>From: <%= flight.from %></h2>
+                <h2>To: <%= flight.to %></h2>
+                <p>Date: <%= flight.date %></p>
+                <p>Price: <%= flight.price %>€</p>
+                <h5>Company: <%= flight.company %></h5>
 
                 <button>
                     <a href="/api/flights/<%= flight.id %>">Show more</a>
