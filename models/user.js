@@ -7,10 +7,7 @@ class User {
         return users.find((user) => user.email === email);
     }
     static add(user) {
-        const emailExists = users.find((u) => u.email === user.email);
-    if (emailExists) {
-        throw new Error('User with this email already exists');
-    }
+   
         const newUser = {
             id: Id(),
             ...user
